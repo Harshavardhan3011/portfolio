@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Logo from './layout/Logo.png'
 
 export default function Layout() {
   return (
@@ -7,7 +8,7 @@ export default function Layout() {
       <header className="bg-white sticky top-0 z-50">
         <div className="container justify-center mx-auto flex justify-between items-center p-4">
           <div className="text-xl font-bold text-green-500">
-            <Link to="/"><img src="src/layout/Logo.png" alt="Logo" /></Link>
+            <Link to="/"><img src={Logo.png} alt="Logo" /></Link>
           </div>
           <nav className="flex space-x-6">
             <Link to="/" className="hover:text-green-500">Home</Link>
