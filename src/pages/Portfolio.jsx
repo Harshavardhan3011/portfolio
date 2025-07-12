@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import group1 from "./Group1.jpg";
+import group2 from "./Group2.jpg";
 
 export default function Portfolio() {
   const settings = {
@@ -42,14 +44,14 @@ export default function Portfolio() {
           <Slider {...settings}>
             <div>
               <img
-                src="src\pages\Group1.jpg"
+                src={group1}
                 alt="Project 1"
                 className="rounded-xl shadow-md w-full object-cover"
               />
             </div>
             <div>
               <img
-                src="src\pages\Group2.jpg"
+                src={group2}
                 alt="Project 2"
                 className="rounded-xl shadow-md w-full object-cover"
               />

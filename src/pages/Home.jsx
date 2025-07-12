@@ -3,6 +3,7 @@ import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Testimonials from './Testimonial';
 import Contact from './Contact';
+import profile from "./profile.jpg";
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
           </div>
           <div className="bg-green-500 flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 ">
             <div className='border border-black'>
-              <img src="src\pages\image 206.png" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
+              <img src={profile} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
             </div>
           </div>
         </div>
