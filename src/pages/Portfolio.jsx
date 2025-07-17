@@ -8,7 +8,7 @@ export default function Portfolio() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, 
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
@@ -40,23 +40,22 @@ export default function Portfolio() {
         </div>
 
         {/* Right Image Carousel */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 w-full overflow-hidden">
           <Slider {...settings}>
-            <div>
+            <div className="flex justify-center">
               <img
                 src={group1}
                 alt="Project 1"
-                className="rounded-xl shadow-md w-full object-cover"
+                className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-full h-auto object-cover rounded-xl shadow-md mx-auto"
               />
             </div>
-            <div>
+            <div className="flex justify-center">
               <img
                 src={group2}
                 alt="Project 2"
-                className="rounded-xl shadow-md w-full object-cover"
+                className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-full h-auto object-cover rounded-xl shadow-md mx-auto"
               />
             </div>
-            
           </Slider>
         </div>
       </div>
