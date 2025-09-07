@@ -25,7 +25,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Call me</h4>
-                <p className="text-gray-700">+910030112004</p>
+                <p className="text-gray-700">+91 9182889794</p>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Email me</h4>
-                <p className="text-gray-700">zorohere@gmail.com</p>
+                <p className="text-gray-700">harshavardhanvesalapu1@gmail.com</p>
               </div>
             </div>
 
@@ -52,24 +52,60 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold text-lg">Address</h4>
-                <p className="text-gray-700">East blue, One piece</p>
+                <p className="text-gray-700">Gajuwaka, Vishakapatnam, Andhra Pradesh, 530049</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Contact Form */}
-        <form className="space-y-6">
+        <form 
+          className="space-y-6" 
+          action="mailto:harshavardhanvesalapu1@gmail.com?subject=Contact Form Submission"
+          method="POST"
+          encType="text/plain"
+        >       
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" placeholder="Full name" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
-            <input type="email" placeholder="Your email" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <input 
+              type="text" 
+              name="fullname"
+              placeholder="Full name" 
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+              required
+            />
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Your email" 
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+              required
+            />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="text" placeholder="Phone number" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
-            <input type="text" placeholder="Budget" className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <input 
+              type="text" 
+              name="phone"
+              placeholder="Phone number" 
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+            <input 
+              type="text" 
+              name="budget"
+              placeholder="Budget" 
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
           </div>
-          <textarea rows="4" placeholder="Message" className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
-          <button type="submit" className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold transition">
+          <textarea 
+            rows="4" 
+            name="message"
+            placeholder="Message" 
+            className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+            required
+          ></textarea>
+          <button 
+            type="submit" 
+            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold transition"
+          >
             Submit Message
           </button>
         </form>

@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import group1 from "./Group1.jpg";
-import group2 from "./Group2.jpg";
+import group1 from "./Group1.png";
+import group2 from "./Group2.png";
 
 export default function Portfolio() {
   const settings = {

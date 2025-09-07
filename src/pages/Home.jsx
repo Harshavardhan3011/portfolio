@@ -4,6 +4,7 @@ import Portfolio from './Portfolio';
 import Testimonials from './Testimonial';
 import Contact from './Contact';
 import profile from "./profile.jpg";
+import harsha from "./harsha.jpg";
 
 
 export default function Home() {
@@ -15,16 +16,16 @@ export default function Home() {
             <h1 className="text-5xl font-bold leading-none ">I have 
               <span className="text-green-500"> Creative Design </span> Experience
             </h1>
-            <p className="mt-6 mb-8 text-lg sm:mb-12">I'm Tanvir, a creative Product Designer. I've been helping businesses to solve their problems with my design for 2 years.
+            <p className="mt-6 mb-8 text-lg sm:mb-12">I'm Harsha Vardhan, a creative Product Designer. I'm currently pursuing my B.Tech in the final year.
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-green-500 dark:text-gray-50">Contact Me</a>
               <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold  rounded ">View portfolio</a>
             </div>
           </div>
-          <div className="bg-green-500 flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 ">
-            <div className='border border-black'>
-              <img src={profile} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
+          <div className=" flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 w-full lg:w-1/2 rounded-lg">
+            <div className=''>
+              <img src={harsha} alt="" className="object-contain rounded-lg sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
             </div>
           </div>
         </div>
@@ -32,15 +33,15 @@ export default function Home() {
       <section className="p-6 dark:bg-white-100 dark:text-gray-800">
         <div className="container mx-auto grid justify-center grid-cols-2 text-center lg:grid-cols-3">
           <div className="flex flex-col justify-start m-2 lg:m-6">
-            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">50+</p>
+            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">5+</p>
             <p className="text-sm sm:text-base">Satisfied Clients</p>
           </div>
           <div className="flex flex-col justify-start m-2 lg:m-6">
-            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">200+</p>
+            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">5+</p>
             <p className="text-sm sm:text-base">Projects Completed</p>
           </div>
           <div className="flex flex-col justify-start m-2 lg:m-6">
-            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">99+</p>
+            <p className="text-4xl font-bold leading-none lg:text-6xl text-green-500">10+</p>
             <p className="text-sm sm:text-base">Reviews given</p>
           </div>
         </div>
