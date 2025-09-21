@@ -9,6 +9,7 @@ import Testimonials from './pages/Testimonial';
 import Contact from './pages/Contact';
 import './index.css';
 import Slider from "react-slick";
+import resume from"./layout/harsha_vardhan_resume.pdf";
 
 function App() {
   const settings = {
