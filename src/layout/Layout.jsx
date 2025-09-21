@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from "./Logo.png";
+import resume from "./harsha_vardhan_resume.pdf";
 
 
 export default function Layout() {
@@ -19,7 +20,7 @@ export default function Layout() {
             <Link to="/Testimonials" className="hover:text-green-500">Testimonials</Link>
           </nav>
           <a
-            href="src\layout\harsha_vardhan_resume.pdf"
+            href="resume"
             target="_blank"
             
             className="bg-green-500 text-white px-4 py-1 rounded"
