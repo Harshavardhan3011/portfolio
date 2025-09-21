@@ -47,7 +47,6 @@ export default function About() {
           >
             <h3 className="text-xl font-bold mb-4 text-gray-800">Skills</h3>
             <ul className="grid grid-cols-2 gap-3 text-gray-700">
-              <li>C</li>
               <li>Python</li>
               <li>HTML & CSS</li>
               <li>JavaScript</li>
