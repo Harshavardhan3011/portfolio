@@ -6,7 +6,6 @@ export default function Contact() {
     fullname: "",
     email: "",
     phone: "",
-    budget: "",
     message: ""
   });
   const [loading, setLoading] = useState(false);
@@ -20,15 +19,24 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const serviceID = "your_service_id";      // Replace with your EmailJS service ID
-    const templateID = "your_template_id";    // Replace with your EmailJS template ID
-    const userID = "your_user_id";            // Replace with your EmailJS user ID
+    const serviceID = "service_501";      
+    const templateID = "template_501";     
+    const userID = "qh_lF64fPIXy8N3VN";             
 
-    emailjs.send(serviceID, templateID, formData, userID)
+    // Prepare data for email template
+    const templateParams = {
+      name: formData.fullname,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      time: new Date().toLocaleString()       // Current date/time string
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, userID)
       .then(() => {
         setLoading(false);
         setResult({ success: true, message: "Message sent successfully!" });
-        setFormData({ fullname: "", email: "", phone: "", budget: "", message: "" });
+        setFormData({ fullname: "", email: "", phone: "", message: "" });
       }, (error) => {
         setLoading(false);
         setResult({ success: false, message: "Failed to send message, please try again." });
@@ -95,59 +103,50 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input 
               type="text" 
-              name="fullname"
+              name="fullname" 
               placeholder="Full name" 
-              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-              value={formData.fullname}
-              onChange={handleChange}
-              required
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" 
+              value={formData.fullname} 
+              onChange={handleChange} 
+              required 
             />
             <input 
               type="email" 
-              name="email"
+              name="email" 
               placeholder="Your email" 
-              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-              value={formData.email}
-              onChange={handleChange}
-              required
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" 
+              value={formData.email} 
+              onChange={handleChange} 
+              required 
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input 
               type="text" 
-              name="phone"
+              name="phone" 
               placeholder="Phone number" 
-              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-              value={formData.phone}
-              onChange={handleChange}
-            />
-            <input 
-              type="text" 
-              name="budget"
-              placeholder="Budget" 
-              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-              value={formData.budget}
-              onChange={handleChange}
+              className="p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" 
+              value={formData.phone} 
+              onChange={handleChange} 
+              required 
             />
           </div>
           <textarea 
             rows="4" 
-            name="message"
+            name="message" 
             placeholder="Message" 
-            className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-            value={formData.message}
-            onChange={handleChange}
-            required
+            className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" 
+            value={formData.message} 
+            onChange={handleChange} 
+            required 
           ></textarea>
-
           <button 
             type="submit" 
-            disabled={loading}
+            disabled={loading} 
             className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold transition disabled:opacity-50"
           >
             {loading ? "Sending..." : "Submit Message"}
           </button>
-
           {result && (
             <p className={`mt-4 ${result.success ? "text-green-500" : "text-red-500"}`}>
               {result.message}
