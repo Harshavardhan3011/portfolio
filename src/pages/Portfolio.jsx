@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import group1 from "./group1.png";
 import group2 from "./group2.png";
+import { Link } from "react-router-dom";
+
 
 export default function Portfolio() {
   const settings = {
@@ -34,9 +36,12 @@ export default function Portfolio() {
           <p className="text-gray-600">
             I have selected and mentioned here some of my latest projects to share with you.
           </p>
-          <button className="bg-green-500 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-600 transition">
-            Show More
-          </button>
+          <Link to="/projects">
+  <button className="bg-green-500 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-600 transition">
+    Show More
+  </button>
+</Link>
+
         </div>
 
         {/* Right Image Carousel */}
