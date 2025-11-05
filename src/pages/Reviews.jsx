@@ -12,7 +12,7 @@ export default function Reviews() {
             <div className="flex items-center space-x-4">
               <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" />
               <div>
-                <h4 className="font-bold">Leroy Jenkins</h4>
+                <h4 className="font-bold">Raju</h4>
                 <span className="text-xs text-gray-500">2 days ago</span>
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function Reviews() {
             <div className="flex items-center space-x-4">
               <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" />
               <div>
-                <h4 className="font-bold">Jessica Doe</h4>
+                <h4 className="font-bold">leela vardhan</h4>
                 <span className="text-xs text-gray-500">5 days ago</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Reviews() {
             <div className="flex items-center space-x-4">
               <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="User" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" />
               <div>
-                <h4 className="font-bold">Samuel Green</h4>
+                <h4 className="font-bold">Rahul</h4>
                 <span className="text-xs text-gray-500">1 week ago</span>
               </div>
             </div>

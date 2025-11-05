@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGem, FaCubes, FaHeartbeat } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 export default function MySkillsSection() {
   return (
@@ -15,9 +16,12 @@ export default function MySkillsSection() {
         <p className="text-gray-600 mt-4 mb-6 text-lg">
           I’m specialist in UI/UX Design<span className="font-medium">.</span> My passion is designing & solving problems through user experience and research.
         </p>
-        <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition">
-          Hire Me
-        </button>
+        <Link
+  to="/About"
+  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition inline-block"
+>
+  About Me
+</Link>
       </div>
 
       {/* Right Section */}

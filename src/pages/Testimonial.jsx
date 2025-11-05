@@ -29,7 +29,7 @@ export default function Testimonials() {
             </svg>
           </div>
           <span className="w-12 h-1 my-2 rounded-lg dark:bg-violet-600"></span>
-          <p>Leroy Jenkins</p>
+          <p>Leela vardhan</p>
         </div>
         <div className="flex flex-col items-center max-w-lg mx-12 lg:mx-0">
           <div className="relative text-center">
@@ -44,7 +44,7 @@ export default function Testimonials() {
             </svg>
           </div>
           <span className="w-12 h-1 my-2 rounded-lg dark:bg-violet-600"></span>
-          <p>Leroy Jenkins</p>
+          <p>Rahul</p>
         </div>
       </div>
     </section>
