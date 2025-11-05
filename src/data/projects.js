@@ -13,7 +13,7 @@ export const projects = [
       new URL("../assets/HRMS6.jpg", import.meta.url).href,
       new URL("../assets/HRMS7.jpg", import.meta.url).href,
     ],
-    link: "https://your-hrms-link.com",
+    link: "https://hrms-three-blue.vercel.app/login",
     tech: ["React", "Tailwind", "Vite"],
     year: 2025,
     type: "web",
