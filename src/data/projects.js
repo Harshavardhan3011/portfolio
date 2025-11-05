@@ -56,14 +56,5 @@ export const projects = [
     year: 2024,
     type: "tool",
   },
-  {
-    slug: "qr",
-    title: "QR Code",
-    desc: "A QR code generator and scanner utility.",
-    images: [new URL("../pages/group1.png", import.meta.url).href],
-    link: "https://your-qr-code-link.com",
-    tech: ["React", "qrcode"],
-    year: 2024,
-    type: "tool",
-  },
+  
 ];
