@@ -25,7 +25,7 @@ export const projects = [
     images: [
       new URL("../assets/portfolioimg.png", import.meta.url).href,
     ],
-    link: "https://harsha-flax.vercel.app/",
+    link: "https://portfolio-beta-livid-zahsjif86i.vercel.app/",
     tech: ["React", "Tailwind"],
     year: 2025,
     type: "ui",
